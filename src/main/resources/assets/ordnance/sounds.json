@@ -1,0 +1,10 @@
+{
+  "by_dusk": {
+    "sounds": [
+      {
+        "name": "ordnance:by_dusk",
+        "stream": true
+      }
+    ]
+}
+}

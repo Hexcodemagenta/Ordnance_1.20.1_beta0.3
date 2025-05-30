@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ordnance:wolframite_dust"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "ordnance:tiny_wolframite_dust"
+  }
+}

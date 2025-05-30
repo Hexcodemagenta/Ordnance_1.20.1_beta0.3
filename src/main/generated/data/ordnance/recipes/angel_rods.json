@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "F": {
+      "item": "minecraft:feather"
+    },
+    "N": {
+      "item": "minecraft:gold_nugget"
+    },
+    "T": {
+      "item": "ordnance:tungsten_ingot"
+    },
+    "W": {
+      "item": "ordnance:wolframite_ingot"
+    }
+  },
+  "pattern": [
+    " T ",
+    "NWN",
+    "FWF"
+  ],
+  "result": {
+    "item": "ordnance:angel_rods"
+  },
+  "show_notification": true
+}

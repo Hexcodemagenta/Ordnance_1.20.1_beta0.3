@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "ordnance",
+	"version": "${version}",
+	"name": "Ordnance",
+	"description": "Hexcodemagenta's Ordnance.",
+	"authors": [
+		"Hexcodemagenta"
+	],
+	"contact": {
+		"homepage": "wip",
+		"sources": "wip"
+	},
+	"license": "MIT",
+	"icon": "assets/ordnance/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.hexcodemagenta.ordnance.Ordnance"
+		],
+		"fabric-datagen": [
+			"net.hexcodemagenta.ordnance.OrdnanceDataGenerator"
+		]
+	},
+	"mixins": [
+		"ordnance.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

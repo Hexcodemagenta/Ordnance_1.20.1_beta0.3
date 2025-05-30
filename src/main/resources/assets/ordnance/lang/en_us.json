@@ -1,0 +1,15 @@
+{
+  "item.ordnance.wolframite_ingot": "Wolframite Ingot",
+  "item.ordnance.tungsten_ingot": "Tungsten Ingot",
+  "item.ordnance.wolframite_dust": "Wolframite Dust",
+  "item.ordnance.tiny_wolframite_dust": "Tiny Pile of Wolframite Dust",
+  "item.ordnance.angel_rods": "Angel Rods",
+  "item.ordnance.music_disc_by_dusk": "Music Disc",
+  "item.ordnance.music_disc_by_dusk.desc": "Hexcodemagenta - By Dusk",
+
+  "tooltip.ordnance.wolframiteitem.tooltip": "(Fe,Mn)WO4",
+  "tooltip.ordnance.tungstenitem.tooltip": "W",
+
+
+  "itemgroup.ordnance": "Ordnance"
+}

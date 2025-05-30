@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:wolframite_dust"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_tiny_wolframite_dust": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ordnance:tiny_wolframite_dust"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_tiny_wolframite_dust",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:wolframite_dust"
+    ]
+  },
+  "sends_telemetry_event": false
+}

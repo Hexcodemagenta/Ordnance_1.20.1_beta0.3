@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 1000,
+  "experience": 1.0,
+  "group": "wolframite",
+  "ingredient": {
+    "item": "ordnance:wolframite_dust"
+  },
+  "result": "ordnance:tungsten_ingot"
+}
