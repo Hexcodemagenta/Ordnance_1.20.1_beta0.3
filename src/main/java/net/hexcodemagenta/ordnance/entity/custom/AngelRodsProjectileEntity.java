@@ -34,12 +34,16 @@ public class AngelRodsProjectileEntity extends ThrownItemEntity {
 
     @Override
     protected void onEntityHit(EntityHitResult entityHitResult) {
-        if(!this.getWorld().isClient()) {
-            this.getWorld().sendEntityStatus(this, (byte)3);
-            this.getWorld().setBlockState(getBlockPos(), Blocks.FIRE.getDefaultState());
-        }
-
-        this.discard();
         super.onEntityHit(entityHitResult);
+        entityHitResult.getEntity().damage(this.getDamageSources().thrown(this, this.getOwner()), 10.0F);
+        entityHitResult.getEntity().setFireTicks(100);
+
+        if (!this.getWorld().isClient()) {
+            this.getWorld().sendEntityStatus(this, (byte) 3);
+            this.getWorld().setBlockState(getBlockPos(), Blocks.FIRE.getDefaultState());
+
+            this.discard();
+            super.onEntityHit(entityHitResult);
+        }
     }
 }

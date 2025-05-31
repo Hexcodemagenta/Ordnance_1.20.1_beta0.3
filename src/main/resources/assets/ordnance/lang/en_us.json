@@ -1,14 +1,30 @@
 {
   "item.ordnance.wolframite_ingot": "Wolframite Ingot",
   "item.ordnance.tungsten_ingot": "Tungsten Ingot",
+  "item.ordnance.steel_ingot": "Steel Ingot",
+  "item.ordnance.tungstensteel_ingot": "Tungstensteel Ingot",
+
   "item.ordnance.wolframite_dust": "Wolframite Dust",
+  "item.ordnance.tungsten_dust": "Tungsten Dust",
+  "item.ordnance.iron_dust": "Iron Dust",
+  "item.ordnance.coal_dust": "Coal Dust",
+  "item.ordnance.steel_dust": "Steel Dust",
+  "item.ordnance.tungstensteel_dust": "Tungstensteel Dust",
+
   "item.ordnance.tiny_wolframite_dust": "Tiny Pile of Wolframite Dust",
-  "item.ordnance.angel_rods": "Angel Rods",
+
+  "item.ordnance.angel_rods": "Angel Rod",
+
   "item.ordnance.music_disc_by_dusk": "Music Disc",
+
   "item.ordnance.music_disc_by_dusk.desc": "Hexcodemagenta - By Dusk",
 
   "tooltip.ordnance.wolframiteitem.tooltip": "(Fe,Mn)WO4",
   "tooltip.ordnance.tungstenitem.tooltip": "W",
+  "tooltip.ordnance.ironitem.tooltip": "Fe",
+  "tooltip.ordnance.carbonitem.tooltip": "C",
+  "tooltip.ordnance.steelitem.tooltip": "Fe+C",
+  "tooltip.ordnance.tungstensteelitem.tooltip": "W+(Fe+C)",
 
 
   "itemgroup.ordnance": "Ordnance"

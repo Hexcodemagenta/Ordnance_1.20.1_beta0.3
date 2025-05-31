@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:music_disc_relic"
+    },
+    {
+      "item": "ordnance:steel_dust"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "ordnance:tungstensteel_dust"
+  }
+}

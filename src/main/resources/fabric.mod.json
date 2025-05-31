@@ -1,15 +1,15 @@
 {
 	"schemaVersion": 1,
 	"id": "ordnance",
-	"version": "${version}",
+	"version": "1.0",
 	"name": "Ordnance",
 	"description": "Hexcodemagenta's Ordnance.",
 	"authors": [
 		"Hexcodemagenta"
 	],
 	"contact": {
-		"homepage": "wip",
-		"sources": "wip"
+		"homepage": "none!",
+		"sources": "https://github.com/Hexcodemagenta/Ordnance_1.20.1_beta0.3"
 	},
 	"license": "MIT",
 	"icon": "assets/ordnance/icon.png",
@@ -17,6 +17,9 @@
 	"entrypoints": {
 		"main": [
 			"net.hexcodemagenta.ordnance.Ordnance"
+		],
+		"client": [
+			"net.hexcodemagenta.ordnance.OrdnanceClient"
 		],
 		"fabric-datagen": [
 			"net.hexcodemagenta.ordnance.OrdnanceDataGenerator"

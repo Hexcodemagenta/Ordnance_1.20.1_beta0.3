@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ordnance:iron_dust"
+    },
+    {
+      "item": "ordnance:iron_dust"
+    },
+    {
+      "item": "ordnance:iron_dust"
+    },
+    {
+      "item": "ordnance:coal_dust"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "ordnance:steel_dust"
+  }
+}

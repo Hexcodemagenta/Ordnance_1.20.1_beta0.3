@@ -18,8 +18,18 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.WOLFRAMITE_INGOT)).entries((displayContext, entries) -> {
                         entries.add(ModItems.WOLFRAMITE_INGOT);
                         entries.add(ModItems.TUNGSTEN_INGOT);
+                        entries.add(ModItems.STEEL_INGOT);
+                        entries.add(ModItems.TUNGSTENSTEEL_INGOT);
+
                         entries.add(ModItems.WOLFRAMITE_DUST);
+                        entries.add(ModItems.TUNGSTEN_DUST);
+                        entries.add(ModItems.IRON_DUST);
+                        entries.add(ModItems.COAL_DUST);
+                        entries.add(ModItems.STEEL_DUST);
+                        entries.add(ModItems.TUNGSTENSTEEL_DUST);
+
                         entries.add(ModItems.TINY_WOLFRAMITE_DUST);
+
                         entries.add(ModItems.ANGEL_RODS);
 
                         entries.add(ModItems.MUSIC_DISC_BY_DUSK);

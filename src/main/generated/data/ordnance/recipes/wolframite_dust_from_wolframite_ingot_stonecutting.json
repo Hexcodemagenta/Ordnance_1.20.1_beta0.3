@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "ordnance:wolframite_ingot"
+  },
+  "result": "ordnance:wolframite_dust"
+}

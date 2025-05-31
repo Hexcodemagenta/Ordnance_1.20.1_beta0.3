@@ -25,7 +25,7 @@ public class AngelRodsItem extends Item {
                 user.getX(),
                 user.getY(),
                 user.getZ(),
-                SoundEvents.BLOCK_AMETHYST_BLOCK_BREAK,
+                SoundEvents.BLOCK_AMETHYST_BLOCK_CHIME,
                 SoundCategory.NEUTRAL,
                 0.5F,
                 0.4F / (world.getRandom().nextFloat() * 0.4F + 0.8F)
@@ -33,7 +33,7 @@ public class AngelRodsItem extends Item {
         if (!world.isClient) {
             AngelRodsProjectileEntity angelRodsProjectileEntity = new AngelRodsProjectileEntity(user, world);
             angelRodsProjectileEntity.setItem(itemStack);
-            angelRodsProjectileEntity.setVelocity(user, user.getPitch(), user.getYaw(), 0.0F, 1.5F, 1.0F);
+            angelRodsProjectileEntity.setVelocity(user, user.getPitch(), user.getYaw(), 0.0F, 3.5F, 1.0F);
             world.spawnEntity(angelRodsProjectileEntity);
         }
 
