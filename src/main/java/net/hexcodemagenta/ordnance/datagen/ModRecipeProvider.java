@@ -17,6 +17,7 @@ import java.util.function.Consumer;
 public class ModRecipeProvider extends FabricRecipeProvider {
     private static final List<ItemConvertible> WOLFRAMITE_SMELTABLES = List.of(ModItems.WOLFRAMITE_DUST);
     private static final List<ItemConvertible> STEEL_SMELTABLES = List.of(ModItems.STEEL_DUST);
+    private static final List<ItemConvertible> TUNGSTENSTEEL_SMELTABLES = List.of(ModItems.STEEL_DUST);
 
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
@@ -29,9 +30,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerBlasting(exporter, WOLFRAMITE_SMELTABLES, RecipeCategory.MISC, ModItems.TUNGSTEN_INGOT,
                 1.0f, 1000, "wolframite");
         offerSmelting(exporter, STEEL_SMELTABLES, RecipeCategory.MISC, ModItems.STEEL_INGOT,
-                1.0f, 200, "wolframite");
+                1.0f, 200, "steel");
         offerBlasting(exporter, STEEL_SMELTABLES, RecipeCategory.MISC, ModItems.STEEL_INGOT,
-                1.0f, 100, "wolframite");
+                1.0f, 100, "steel");
+        offerSmelting(exporter, TUNGSTENSTEEL_SMELTABLES, RecipeCategory.MISC, ModItems.TUNGSTENSTEEL_INGOT,
+                1.0f, 200, "tungstensteel");
+        offerBlasting(exporter, TUNGSTENSTEEL_SMELTABLES, RecipeCategory.MISC, ModItems.TUNGSTENSTEEL_INGOT,
+                1.0f, 100, "tungstensteel");
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.TINY_WOLFRAMITE_DUST, RecipeCategory.MISC,
                 ModItems.WOLFRAMITE_DUST);
@@ -67,7 +72,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.TUNGSTEN_DUST), conditionsFromItem(ModItems.TUNGSTEN_DUST))
                 .criterion(hasItem(ModItems.COAL_DUST), conditionsFromItem(ModItems.COAL_DUST))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.TUNGSTENSTEEL_DUST)));
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.MUSIC_DISC_BY_DUSK, 3)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.MUSIC_DISC_BY_DUSK, 1)
                 .input(Items.MUSIC_DISC_RELIC)
                 .input(ModItems.STEEL_DUST)
                 .criterion(hasItem(ModItems.STEEL_DUST), conditionsFromItem(ModItems.STEEL_DUST))

@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "ordnance",
-	"version": "1.0",
+	"version": "1.0.2",
 	"name": "Ordnance",
 	"description": "Hexcodemagenta's Ordnance.",
 	"authors": [
