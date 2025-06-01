@@ -67,7 +67,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.TUNGSTEN_DUST), conditionsFromItem(ModItems.TUNGSTEN_DUST))
                 .criterion(hasItem(ModItems.COAL_DUST), conditionsFromItem(ModItems.COAL_DUST))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.TUNGSTENSTEEL_DUST)));
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.TUNGSTENSTEEL_DUST, 3)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.MUSIC_DISC_BY_DUSK, 3)
                 .input(Items.MUSIC_DISC_RELIC)
                 .input(ModItems.STEEL_DUST)
                 .criterion(hasItem(ModItems.STEEL_DUST), conditionsFromItem(ModItems.STEEL_DUST))
