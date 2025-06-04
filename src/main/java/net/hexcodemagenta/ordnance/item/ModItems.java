@@ -45,6 +45,8 @@ public class ModItems {
 
     public static final Item ANGEL_RODS = registerItem("angel_rods",
             new AngelRodsItem(new FabricItemSettings().maxCount(1).fireproof().rarity(Rarity.UNCOMMON)));
+    public static final Item CHARSCALIBUR = registerItem("charscalibur",
+            new AngelRodsItem(new FabricItemSettings().maxCount(1).fireproof().rarity(Rarity.UNCOMMON)));
 
     public static final Item MUSIC_DISC_BY_DUSK = registerItem("music_disc_by_dusk",
             new MusicDiscItem(12, ModSounds.BY_DUSK, new FabricItemSettings().rarity(Rarity.RARE).maxCount(1), 208));
