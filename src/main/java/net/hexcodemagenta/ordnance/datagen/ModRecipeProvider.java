@@ -17,7 +17,7 @@ import java.util.function.Consumer;
 public class ModRecipeProvider extends FabricRecipeProvider {
     private static final List<ItemConvertible> WOLFRAMITE_SMELTABLES = List.of(ModItems.WOLFRAMITE_DUST);
     private static final List<ItemConvertible> STEEL_SMELTABLES = List.of(ModItems.STEEL_DUST);
-    private static final List<ItemConvertible> TUNGSTENSTEEL_SMELTABLES = List.of(ModItems.STEEL_DUST);
+    private static final List<ItemConvertible> TUNGSTENSTEEL_SMELTABLES = List.of(ModItems.TUNGSTENSTEEL_DUST);
 
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
@@ -53,6 +53,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.GOLD_NUGGET), conditionsFromItem(Items.GOLD_NUGGET))
                 .criterion(hasItem(ModItems.WOLFRAMITE_INGOT), conditionsFromItem(ModItems.WOLFRAMITE_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.ANGEL_RODS)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.HAMMAH, 1)
+                .pattern("IAI")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('I', Items.IRON_INGOT)
+                .input('A', Items.AMETHYST_SHARD)
+                .input('S', Items.STICK)
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.HAMMAH)));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STEEL_DUST, 2)
                 .input(ModItems.IRON_DUST)

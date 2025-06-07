@@ -34,6 +34,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.WOLFRAMITE_DUST, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.ANGEL_RODS, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.HAMMAH, Models.HANDHELD);
         itemModelGenerator.register(ModItems.CHARSCALIBUR, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.MUSIC_DISC_BY_DUSK, Models.GENERATED);

@@ -1,6 +1,7 @@
 package net.hexcodemagenta.ordnance.item.custom;
 
 import net.hexcodemagenta.ordnance.item.ModItems;
+import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Hand;
@@ -9,7 +10,9 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
     CHARSCALIBUR(-1, 0, 0, 8, 20,
-            () -> Ingredient.ofItems(ModItems.TUNGSTENSTEEL_DUST));
+            () -> Ingredient.ofItems(ModItems.TUNGSTENSTEEL_DUST)),
+    HAMMAH(2, 0, 6, 9, 12,
+            () -> Ingredient.ofItems(Items.IRON_INGOT));
 
 
     private final int miningLevel;

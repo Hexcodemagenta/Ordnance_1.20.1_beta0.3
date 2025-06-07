@@ -12,7 +12,7 @@
 		"sources": "https://github.com/Hexcodemagenta/Ordnance_1.20.1_beta0.3"
 	},
 	"license": "MIT",
-	"icon": "assets/ordnance/icon.png",
+	"icon": "src/main/java/resources/assets/ordnance/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [

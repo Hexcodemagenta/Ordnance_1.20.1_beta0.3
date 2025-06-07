@@ -31,6 +31,7 @@ public class ModItemGroups {
                         entries.add(ModItems.TINY_WOLFRAMITE_DUST);
 
                         entries.add(ModItems.ANGEL_RODS);
+                        entries.add(ModItems.HAMMAH);
 
                         entries.add(ModItems.MUSIC_DISC_BY_DUSK);
 
